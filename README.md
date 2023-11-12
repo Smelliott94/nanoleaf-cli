@@ -11,7 +11,7 @@ load a UI app or cycle through effects using the controller.
 I am very much a Rust novice so feedback is greatly appreciated!
 
 ## Setup
-**Requires the Nanoleaf device to be connected the same network your computer**
+**Requires the Nanoleaf device to be connected the same network as your computer**
 
 If you know the IP address of your nanoleaf device already:
 ```bash
