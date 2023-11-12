@@ -10,7 +10,7 @@ load a UI app or cycle through effects using the controller.
 
 I am very much a Rust novice so feedback is greatly appreciated!
 
-## Setup
+## Setup (known IP)
 **Requires the Nanoleaf device to be connected the same network as your computer**
 
 If you know the IP address of your nanoleaf device already:
@@ -20,7 +20,9 @@ nanoleaf set_ip {your_ip}
 nanoleaf pair
 ```
 
-If you don't, you can find it with the devices MAC address (can be found on the nanoleaf controller) or enough of it to return a unique IP match.
+If you don't, you can find it with the devices MAC address (can be found on the nanoleaf controller) or enough of it to return a unique IP match:
+
+## Setup (unknown IP)
 **on Linux / MacOS**
 ```bash
 nanoleaf discover {MAC or MAC substring}
