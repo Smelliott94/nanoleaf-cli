@@ -33,6 +33,7 @@ nanoleaf pair
 arp -a | Select-String {your_nanoleaf_mac_address}
 # copy your ip from the output, if there's a match (idk powershell lol)
 nanoleaf.exe set_ip {your_nanoleaf_ip}
+nanoleaf.exe pair
 ```
 
 The IP and auth token will be stored in a .nanoleaf file in your home directory
