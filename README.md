@@ -13,7 +13,7 @@ I am very much a Rust novice so feedback is greatly appreciated!
 
 If you know the IP address of your nanoleaf device already:
 ```bash
-nanoleaf ip {your_ip}
+nanoleaf set_ip {your_ip}
 # hold the power button on your nanoleaf for 5-7s until the LED flashes in a pattern
 nanoleaf pair
 ```
@@ -25,8 +25,30 @@ nanoleaf discover {MAC or MAC substring}
 nanoleaf pair
 ```
 
-### After pairing
+The IP and auth token will be stored in a .nanoleaf file in your home directory
+
+### Commands
 ```bash
 # List commands
 nanoleaf --help
+```
+
+```bash
+# Lights on
+nanoleaf on
+```
+
+```bash
+# Lights off
+nanoleaf off
+```
+
+```bash
+# List available effects for your nanoleaf
+nanoleaf effect -l
+```
+
+```bash
+# Activate a nanoleaf effect
+nanoleaf effect "Effect name"
 ```
