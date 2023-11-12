@@ -21,10 +21,18 @@ nanoleaf pair
 ```
 
 If you don't, you can find it with the devices MAC address (can be found on the nanoleaf controller) or enough of it to return a unique IP match.
+**on Linux / MacOS**
 ```bash
 nanoleaf discover {MAC or MAC substring}
 # hold the power button on your nanoleaf for 5-7s until the LED flashes in a pattern
 nanoleaf pair
+```
+
+**on Windows (powershell)**
+```powershell
+arp -a | Select-String {your_nanoleaf_mac_address}
+# copy your ip from the output, if there's a match (idk powershell lol)
+nanoleaf.exe set_ip {your_nanoleaf_ip}
 ```
 
 The IP and auth token will be stored in a .nanoleaf file in your home directory
