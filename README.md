@@ -1,4 +1,6 @@
 # nanoleaf-cli
+Check the [releases](https://github.com/Smelliott94/nanoleaf-cli/releases) for the latest binary.
+
 A simple and fast CLI for interacting with a set of nanoleaf panels on your home network.
 
 I use this at home mainly to turn my nanoleaf lights on and off at the same time as
