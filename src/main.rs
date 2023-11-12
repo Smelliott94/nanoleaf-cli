@@ -9,14 +9,6 @@ use clap::{arg, command, Command, ArgAction};
 use regex::Regex;
 use ini::Ini;
 
-// todo get IP based on MAC address and store
-// nanoleaf discover 
-// todo get and store auth token
-// nanoleaf pair < should display a message
-// " hold the nanoleaf controller on-off button for 5-7 seconds until the LED starts flashing in a pattern"
-// keep trying to  get the auth token from http://192.188.x.x:16021/api/v1/new
-
-
 fn load_config(path: &PathBuf) -> Result<Ini, ini::Error> {    // Define the path to the dotfile
     // Define the path to the dotfile
     let conf = match Ini::load_from_file(&path) {
